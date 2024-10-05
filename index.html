@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/05/68/85/27/360_F_568852772_P4EmbKP8YPargzsPzNQAxUR1JIHFhMlt.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 id="main-heading">Stock Market Analysis</h1>
+        <div id="container">
+            <div id="chart-section">
+                    <canvas id="myChart" width="800" height="400"></canvas>
+                    <div class="chart-tooltip" id="tooltip"></div>
+                    <div class="x-axis-label" id="xAxisLabel"></div>
+                  <div id="timeStamp-btn">
+                    <button id="1mo">1 Month</button>
+                    <button id="3mo">3 Month</button>
+                    <button id="1y">1 year</button>
+                    <button id="5y">5 year</button>
+                  </div>
+                  <div id="stock-extremes">
+                    <p id="peak-value">Peak: Fetching...</p>
+                    <p id="low-value">Low: Fetching...</p>
+                </div>
+            </div>
+            <div id="list-section">                
+            </div>
+        </div>  
+        <div id="detail-section">
+            <div class="detail-stock">
+                <h3 id="stock-name"></h3>
+                <span id="stock-profit"></span>
+                <p id="stock-value"></p>
+            </div>
+            <p id="stock-para">/p>
+        </div>
+    </header>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
